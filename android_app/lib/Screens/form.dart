@@ -24,7 +24,35 @@ class _HomeState extends State<Details> {
       body: Builder(builder: (context) => 
       SingleChildScrollView(
         child: Container(
-          
+          height:MediaQuery.of(context).size.height,
+          padding: EdgeInsets.all(10),
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('images/background.jpg'),
+              fit: BoxFit.cover,
+            ),
+          ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Center(
+                  child: Text(
+                    'Flower Species Prediction using Machine Learning',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.red,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 30,
+                      decoration: TextDecoration.underline,
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 15,
+                ),
+            ],
+          ),
         ),
       ),
       ),
