@@ -28,7 +28,7 @@ class _HomeState extends State<Details> {
           padding: EdgeInsets.all(10),
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('images/background.jpg'),
+              image: AssetImage('images/background2.jpg'),
               fit: BoxFit.cover,
             ),
           ),
